@@ -1,0 +1,42 @@
+.row {
+    max-width: 144rem;
+    display: grid;
+    margin: 0 auto;
+    grid-gap: 5%;
+
+    @include respond(tab-port) {
+        max-width: 50rem;
+        padding: 0 3rem;
+    }
+}
+
+.row-2-col {    
+    grid-template-columns: repeat(2, 1fr);
+
+    @include respond(tab-port) {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+.row-4-col {    
+    grid-template-columns: repeat(4, 1fr);
+
+    @include respond(tab-port) {
+        grid-template-columns: 1fr !important;        
+        grid-template-rows: repeat(4, 1fr) !important;
+    }
+}
+
+.row-3-col {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10% !important; 
+
+    @include respond(tab-port) {
+        grid-template-columns: 1fr !important;        
+        grid-template-rows: repeat(3, 1fr) !important;
+        row-gap: 5% !important;
+        margin-bottom: 35rem;
+    }
+
+
+}
