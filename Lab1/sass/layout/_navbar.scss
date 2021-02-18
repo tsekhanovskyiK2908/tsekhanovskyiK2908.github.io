@@ -1,73 +1,158 @@
-.menu {
+.navbar{
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
     width: 100%;
-    height: 5rem;
-    float: right;
-    background-color: $color-primary-light;
+    z-index: 3;
 
-    &__links {
-        width: 100%;
-        height: inherit;
+    ul {
         margin: 0;
         padding: 0;
-        display: flex;
-
-        li {
-            list-style: none;
-        }
-        a {
-            width: 20%;
-            height: inherit;
-            color: $color-white;
-            display: inline-block;
-            text-decoration: none;   
-            text-align: center;         
-        }       
+        list-style: none;
+        overflow: hidden;
+        background-color: #fff;
     }
 
-    #menuToggle {
-        display: none;
+    &__button:hover, 
+    li a:hover {
+        background-color: #f4f4f4;
+    }
+
+    &__links {
+        clear: both;
+        max-height: none;
+        float: right;
+        // transition: max-height .2s ease-out;
+
+        li {
+            float: left;    
+
+            a {
+                padding: 20px 30px;
+                display: block;
+                // padding: 20px 20px;
+                border-right: 1px solid #f4f4f4;
+                text-decoration: none;
+            }
+        }        
     }
 
     &__icon {
         display: none;
+        // cursor: pointer;
+        // display: inline-block;
+        // // float: right;
+        // padding: 28px 20px;
+        // position: relative;
+        // user-select: none;
     }
 
-    @include respond(phone) {
+    &__icon .navicon {
+        background: #333;
+        display: block;
+        height: 2px;
+        position: relative;
+        // transition: background .2s ease-out;
+        width: 18px;
+    }
+
+
+    &__icon .navicon:before {
+        top:5px;
+    }
+
+    &__icon .navicon:after {
+        top:5px;
+    }
+
+    &__icon .navicon:before,
+    &__icon .navicon:after {
+        background: #333;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
         width: 100%;
-        height: auto;
-
-        &__links {
-            display: block;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height .3s;
-    
-            a {
-                text-align: left;
-                width: 100%;
-                height: 50px;
-                background-color: #f1c40f;
-                padding: 10px 0px 10px 5%;
-            }
-        }
-
-        &__icon {
-            width: 100px;
-            height: inherit;
-            display: block;
-            position: absolute;
-            top: 0;
-            right: 0;
-            line-height: 60px;
-
-            i {
-                font-size: 5rem;
-            }
-        }
-
-        #menuToggle:checked ~ ul {
-            max-height: 35rem !important;
-        }
-
     }
+    
+    &__button {
+        display: none;
+    }
+
 }
+
+
+// .menu {
+//     width: 100%;
+//     height: 5rem;
+//     float: right;
+//     background-color: $color-primary-light;
+
+//     &__links {
+//         width: 100%;
+//         height: inherit;
+//         margin: 0;
+//         padding: 0;
+//         display: flex;
+
+//         li {
+//             list-style: none;
+//         }
+//         a {
+//             width: 20%;
+//             height: inherit;
+//             color: $color-white;
+//             display: inline-block;
+//             text-decoration: none;   
+//             text-align: center;         
+//         }       
+//     }
+
+//     #menuToggle {
+//         display: none;
+//     }
+
+//     &__icon {
+//         display: none;
+//     }
+
+//     @include respond(phone) {
+//         width: 100%;
+//         height: auto;
+
+//         &__links {
+//             display: block;
+//             max-height: 0;
+//             overflow: hidden;
+//             transition: max-height .3s;
+    
+//             a {
+//                 text-align: left;
+//                 width: 100%;
+//                 height: 50px;
+//                 background-color: #f1c40f;
+//                 padding: 10px 0px 10px 5%;
+//             }
+//         }
+
+//         &__icon {
+//             width: 100px;
+//             height: inherit;
+//             display: block;
+//             position: absolute;
+//             top: 0;
+//             right: 0;
+//             line-height: 60px;
+
+//             i {
+//                 font-size: 5rem;
+//             }
+//         }
+
+//         #menuToggle:checked ~ ul {
+//             max-height: 35rem !important;
+//         }
+
+//     }
+// }

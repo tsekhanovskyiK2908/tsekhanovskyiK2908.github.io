@@ -2,29 +2,16 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">        
         <link rel="stylesheet" href="./styles/icon-font.css">
         <link rel="stylesheet" href="./styles/style.css">
         <link rel="shortcut icon" type="image/png" href="./img/favicon.png">
-        
+
         <title>Natours | Exciting tours for adventurous people</title>
     </head>
-    <body>     
-        <!-- <nav class="menu">
-            <input type="checkbox" id="menuToggle">
-            <label for="menuToggle" class="menu__icon">
-                <i class="icon-basic-map"></i>
-            </label>                
-            <ul class="menu__links">
-                <a href="#"><li>Home</li></a>
-                <a href="#"><li>Tours</li></a>
-                <a href="#"><li>Stories</li></a>
-                <a href="#"><li>Book</li></a>
-            </ul>
-        </nav>    -->
+    <body>    
         <header class="header">
             <div class="header__logo-box">
                 <img src="img/logo-white.png" alt="Logo white" class="header__logo">
@@ -58,9 +45,21 @@
                     </div>
                     <div class="row-item">
                         <div class="composition">
-                            <img src="./img/nat-1.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
-                            <img src="./img/nat-2.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
-                            <img src="./img/nat-3.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">                            
+                            <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w" 
+                                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" 
+                                 alt="Photo 1" 
+                                 class="composition__photo composition__photo--p1"
+                                 src="./img/nat-1.jpg">
+                            <img srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w" 
+                                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" 
+                                 alt="Photo 2" 
+                                 class="composition__photo composition__photo--p2"
+                                 src="./img/nat-2.jpg">
+                            <img srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w" 
+                                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" 
+                                 alt="Photo 3" 
+                                 class="composition__photo composition__photo--p3"
+                                 src="./img/nat-3.jpg">
                         </div>
                     </div>
                 </div>                
@@ -107,7 +106,6 @@
                     <div class="card">
                         <div class="card__side card__side--front">
                             <div class="card__picture card__picture--1">
-                                $nbsp
                             </div>
                             <h4 class="card__heading">
                                 <span class="card__heading-span card__heading-span--1">
@@ -137,7 +135,6 @@
                     <div class="card">
                         <div class="card__side card__side--front">
                             <div class="card__picture card__picture--2">
-                                $nbsp
                             </div>
                             <h4 class="card__heading">
                                 <span class="card__heading-span card__heading-span--2">
@@ -167,7 +164,6 @@
                     <div class="card">
                         <div class="card__side card__side--front">
                             <div class="card__picture card__picture--3">
-                                $nbsp
                             </div>
                             <h4 class="card__heading">
                                 <span class="card__heading-span card__heading-span--3">
@@ -232,7 +228,7 @@
                         <figure class="story__shape">
                             <img src="img/nat-9.jpg" alt="Person on a tour" class="story__img">
                             <figcaption class="story__caption">
-                                Mary Smith
+                                David Barrow
                             </figcaption>
                         </figure>
                         <div class="story__text">
@@ -294,7 +290,10 @@
         </main>
         <footer class="footer">
             <div class="footer__logo-box">
-                <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo">
+                <picture class="footer__logo">
+                    <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" media="(max-width: 37.5em)">
+                        <img src = "img/logo-green-2x.png" srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo">
+                </picture>
             </div>
             <div class="row row-2-col">
                 <div>
@@ -327,3 +326,39 @@
         </footer>
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+<!-- <nav class="navbar">
+    <input class="navbar__button" type="checkbox" id="navbar-btn" />
+    <label class="navbar__icon" for="navbar-btn"><span class="navicon"></span></label>                
+    <ul class="navbar__links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Tours</a></li>
+        <li><a href="#">Stories</a></li>
+        <li><a href="#">Book</a></li>
+    </ul>
+</nav>         -->
+
+<!-- <nav class="navbar">
+            <input class="navbar__button" type="checkbox" id="navbar-btn" />
+            <label class="navbar__icon" for="navbar-btn"><span class="navicon"></span></label>                
+            <ul class="navbar__links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Tours</a></li>
+                <li><a href="#">Stories</a></li>
+                <li><a href="#">Book</a></li>
+            </ul>
+        </nav> -->
+
+        
+<!-- <img src="./img/nat-1.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
+<img src="./img/nat-2.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
+<img src="./img/nat-3.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">   
