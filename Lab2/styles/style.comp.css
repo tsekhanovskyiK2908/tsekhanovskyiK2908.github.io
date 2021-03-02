@@ -105,6 +105,7 @@ body {
   font-weight: 700;
   display: inline-block;
   background-image: linear-gradient(to right, #7ed56f, #28b485);
+  background-clip: text;
   -webkit-background-clip: text;
   letter-spacing: .2rem;
   color: transparent;
@@ -423,7 +424,7 @@ body {
     margin-bottom: .5rem;
     display: inline-block;
     background-image: linear-gradient(to right, #7ed56f, #28b485);
-    -webkit-background-clip: text;
+    background-clip: text;
     color: transparent; }
     @media only screen and (max-width: 56.25em) {
       .feature-box__icon {
