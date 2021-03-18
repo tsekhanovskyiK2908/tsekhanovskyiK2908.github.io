@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/Lab4/static/css/main.447523e7.chunk.css",
+    "main.js": "/Lab4/static/js/main.2e9e4f20.chunk.js",
+    "main.js.map": "/Lab4/static/js/main.2e9e4f20.chunk.js.map",
+    "runtime-main.js": "/Lab4/static/js/runtime-main.72e5756d.js",
+    "runtime-main.js.map": "/Lab4/static/js/runtime-main.72e5756d.js.map",
+    "static/js/2.ae11b93c.chunk.js": "/Lab4/static/js/2.ae11b93c.chunk.js",
+    "static/js/2.ae11b93c.chunk.js.map": "/Lab4/static/js/2.ae11b93c.chunk.js.map",
+    "static/js/3.84e51a1f.chunk.js": "/Lab4/static/js/3.84e51a1f.chunk.js",
+    "static/js/3.84e51a1f.chunk.js.map": "/Lab4/static/js/3.84e51a1f.chunk.js.map",
+    "index.html": "/Lab4/index.html",
+    "static/css/main.447523e7.chunk.css.map": "/Lab4/static/css/main.447523e7.chunk.css.map",
+    "static/js/2.ae11b93c.chunk.js.LICENSE.txt": "/Lab4/static/js/2.ae11b93c.chunk.js.LICENSE.txt",
+    "static/media/Header.scss": "/Lab4/static/media/hero.15e5f60e.jpg",
+    "static/media/Features.scss": "/Lab4/static/media/linea-basic-10.a5a02e7f.svg",
+    "static/media/logo-green-1x.cf3c47ee.png": "/Lab4/static/media/logo-green-1x.cf3c47ee.png",
+    "static/media/logo-green-2x.76177450.png": "/Lab4/static/media/logo-green-2x.76177450.png",
+    "static/media/logo-green-small-2x.de221e6e.png": "/Lab4/static/media/logo-green-small-2x.de221e6e.png",
+    "static/media/logo-white.6c89a3f0.png": "/Lab4/static/media/logo-white.6c89a3f0.png",
+    "static/media/nat-1-large.a1c1cbdb.jpg": "/Lab4/static/media/nat-1-large.a1c1cbdb.jpg",
+    "static/media/nat-1.0e0a34b9.jpg": "/Lab4/static/media/nat-1.0e0a34b9.jpg",
+    "static/media/nat-2-large.cbc0cd9f.jpg": "/Lab4/static/media/nat-2-large.cbc0cd9f.jpg",
+    "static/media/nat-2.e2a50751.jpg": "/Lab4/static/media/nat-2.e2a50751.jpg",
+    "static/media/nat-3-large.da53b7a0.jpg": "/Lab4/static/media/nat-3-large.da53b7a0.jpg",
+    "static/media/nat-3.5eff150a.jpg": "/Lab4/static/media/nat-3.5eff150a.jpg",
+    "static/media/Stories.scss": "/Lab4/static/media/nat-4.114dc940.jpg",
+    "static/media/Tours.scss": "/Lab4/static/media/nat-7.167e44e4.jpg",
+    "static/media/nat-8.10678031.jpg": "/Lab4/static/media/nat-8.10678031.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.72e5756d.js",
+    "static/js/2.ae11b93c.chunk.js",
+    "static/css/main.447523e7.chunk.css",
+    "static/js/main.2e9e4f20.chunk.js"
+  ]
+}
