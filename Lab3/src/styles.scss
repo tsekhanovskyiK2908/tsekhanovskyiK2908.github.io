@@ -189,6 +189,10 @@ body {
     }
 }
 
+.heading-blue {
+    background-image: linear-gradient(to right, $color-tertiary-light, $color-tertiary-dark);
+}
+
 .heading-tertiary {
     font-size: $default-font-size;
     font-weight: 700;
@@ -307,6 +311,15 @@ body {
 
         &::after {
             background-color: $color-primary;
+        }
+    }
+
+    &--blue {
+        background-color: $color-tertiary-dark;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-tertiary-dark;
         }
     }
     
@@ -492,6 +505,4 @@ body {
         row-gap: 5% !important;
         margin-bottom: 35rem;
     }
-
-
 }

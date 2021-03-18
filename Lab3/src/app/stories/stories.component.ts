@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { UserStory } from '../models/user-story';
 import { StoryRepository } from '../repositories/story-repository';
 
 @Component({
@@ -8,10 +10,30 @@ import { StoryRepository } from '../repositories/story-repository';
 })
 export class StoriesComponent implements OnInit {
 
-  stories = new StoryRepository().getStories();
-  constructor() { }
+  stories:UserStory[] = [];
+  storyForm: FormGroup = new FormGroup({});
 
-  ngOnInit(): void {
+  constructor(private storyRepository: StoryRepository) { }
+
+  ngOnInit(): void {    
+
+    this.loadStories();
+    console.log(this.stories);
+
+    this.storyForm = new FormGroup({
+      userName: new FormControl('', [Validators.required, Validators.minLength(5)]),
+      caption: new FormControl('', [Validators.required, Validators.minLength(5)]),
+      description: new FormControl('', [Validators.required, Validators.minLength(10)])
+    });
   }
 
+  loadStories(): void {
+    this.stories = this.storyRepository.getStories();
+  }
+
+  saveStory(): void {
+    console.log(this.storyForm.value);
+    this.storyRepository.addStory(this.storyForm.value);
+    this.loadStories();
+  }
 }

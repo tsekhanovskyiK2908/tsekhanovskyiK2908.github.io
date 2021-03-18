@@ -30,4 +30,32 @@
         <a href="#" class="btn-text">Read all stories &rarr;</a>
     </div>
 </section>
+<section class="section-book">
+    <div class="book">
+        <div class="book__form">
+            <form class="form" [formGroup]="storyForm" (ngSubmit)="saveStory()">
+                <div class="u-margin-bottom-medium">
+                    <h2 class="heading-secondary heading-blue">
+                        Start booking now
+                    </h2>
+                </div>
+                <div class="form__group">
+                    <input type="text" class="form__input" formControlName="userName" placeholder="Full Name" id="fullName" required>
+                    <label for="fullName" class="form__label"></label>
+                </div>
+                <div class="form__group">
+                    <input type="email" class="form__input" formControlName="caption" placeholder="Brightest impression" id="impression" required>
+                    <label for="impression" class="form__label"></label>
+                </div>
+                <div class="form__group">
+                    <textarea type="text" class="form__textarea" formControlName="description" placeholder="Description" id="description" required></textarea>
+                    <label for="description" class="form__label"></label>
+                </div>               
+                <div class="form__group">
+                    <button class="btn btn--blue" type="submit" [disabled]="!storyForm.valid">Add Feedback</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
     

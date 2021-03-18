@@ -1,7 +1,7 @@
 <section class="section-book">
     <div class="book">
         <div class="book__form">
-            <form action="" class="form" [formGroup]="bookingForm" (ngForm)="onSubmit" novalidate>
+            <form action="" class="form" [formGroup]="bookingForm" (ngSubmit)="onSubmit()">
                 <div class="u-margin-bottom-medium">
                     <h2 class="heading-secondary">
                         Start booking now

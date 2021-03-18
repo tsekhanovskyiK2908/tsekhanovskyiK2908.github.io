@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Tour } from '../models/tour';
 import {TourRepository} from '../repositories/tour-repository';
 
 @Component({
@@ -8,10 +9,11 @@ import {TourRepository} from '../repositories/tour-repository';
 })
 export class CardsComponent implements OnInit {
 
-  tours = new TourRepository().getTours().slice(0,3);
-  constructor() { }
+  tours: Tour[] = [];
+  constructor(private tourRepository: TourRepository) { }
 
   ngOnInit(): void {
+    this.tours = this.tourRepository.getTours();
   }
 
 }

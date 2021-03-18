@@ -11,6 +11,8 @@ import { AboutComponent } from './about/about.component';
 import { FeaturesComponent } from './features/features.component';
 import { StoriesComponent } from './stories/stories.component';
 import { BookingComponent } from './booking/booking.component';
+import { StoryRepository } from './repositories/story-repository';
+import { TourRepository } from './repositories/tour-repository';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,7 @@ import { BookingComponent } from './booking/booking.component';
     AboutComponent,
     FeaturesComponent,
     StoriesComponent,
-    BookingComponent
+    BookingComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,7 +32,7 @@ import { BookingComponent } from './booking/booking.component';
     FormsModule
 
   ],
-  providers: [],
+  providers: [StoryRepository, TourRepository],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
