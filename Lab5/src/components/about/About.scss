@@ -1,0 +1,13 @@
+@import '../../styles.scss';
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+.section-about{
+    font-family: 'Lato', sans-serif;
+    background-color: $color-grey-light-1;
+    padding: 25rem 0;
+    margin-top: -20vh;    
+
+    @include respond(tab-port) {
+        padding: 20rem 0;
+    }
+}
