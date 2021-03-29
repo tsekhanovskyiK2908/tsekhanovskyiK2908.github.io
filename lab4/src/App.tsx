@@ -10,14 +10,14 @@ import Stories from './components/Stories/Stories';
 
 class App extends Component {
   render() {
-    return(<div>
+    return(<React.Fragment>
             <Header/>
             <About/>
             <Features/>
             <Tours/>
             <Stories/>
             <Footer/>
-          </div>);
+          </React.Fragment>);
   }
 }
 
