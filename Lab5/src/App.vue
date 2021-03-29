@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <fragment>
     <Header/>
     <About/>
     <Features/>
     <Tours/>
     <Stories/>
     <Footer/>
-  </div>
+  </fragment>
   <!-- <router-view> -->
 </template>
 
