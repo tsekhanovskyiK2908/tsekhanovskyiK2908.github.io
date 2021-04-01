@@ -1,0 +1,16 @@
+<div class="general-wrapper">
+    <div class="signature-block margin-bottom-medium">
+        <div class="signature-wrapper">
+            <h1>Web Portal</h1>
+            <p class="text-right">by Kyrylo Tsekhanovskyi</p>
+        </div>
+    </div>
+    <div class="navigation-menu">
+        <a [routerLink]="['/orders']"><button class="navigation-link navigation-link-big" routerLinkActive="navigation-link-active">Orders</button></a>
+        <a [routerLink]="['/products-alt']"><button class="navigation-link navigation-link-big" routerLinkActive="navigation-link-active">Products</button></a>
+        <a [routerLink]="['/customers']"><button class="navigation-link navigation-link-big" routerLinkActive="navigation-link-active">Customers</button></a>
+    </div>
+    <div class="component-wrapper">
+        <router-outlet></router-outlet>
+    </div>    
+</div>

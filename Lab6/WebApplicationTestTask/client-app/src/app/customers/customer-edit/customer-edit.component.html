@@ -1,0 +1,27 @@
+<div class="component-header margin-bottom-medium">
+    <p class="component-caption align-vertical">New Customer</p>
+  </div>
+  <form [formGroup]="customerForm" (ngSubmit)="saveCustomer()">
+    <div class="group-input">
+        <label>Created Date: </label>
+        <input value="{{customerCreatedDate | date:'shortDate'}}" disabled>
+    </div>
+    <div class="group-input">
+        <label>Customer Name: </label>
+        <input formControlName="name" 
+              [ngClass]="{'validation-failure': name.invalid && (name.dirty || name.touched) && 
+                                                    (name.errors.required || name.errors.minlength || name.errors.maxlength)}">
+    </div>    
+    <div class="group-textarea">
+        <label>Address:</label>
+        <textarea formControlName="address"
+                  [ngClass]="{'validation-failure': address.invalid && (address.dirty || address.touched) && 
+                                                    (address.errors.required || address.errors.minlength || address.errors.maxlength )}"></textarea>
+    </div>
+    <div class="button-group-wrapper">
+      <div class="button-group">
+        <a class="align-vertical"><button type="submit" class="navigation-link navigation-link-small" [disabled]="!customerForm.valid">Save</button></a>
+        <a class="align-vertical" [routerLink]="['/customers']"><button class="navigation-link navigation-link-small">Cancel</button></a>
+      </div>
+    </div>
+  </form>
